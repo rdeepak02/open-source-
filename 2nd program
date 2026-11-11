@@ -1,0 +1,57 @@
+program 2:
+
+
+#!/bin/bash
+
+total=0
+
+echo "------ Shopping Cart ------"
+echo "1. Pen    - Rs.10"
+echo "2. Pencil - Rs.5"
+echo "3. Book   - Rs.50"
+echo "4. Bag    - Rs.500"
+echo "5. Exit"
+
+while true
+do
+    echo -n "Enter your choice: "
+    read -r choice
+
+    case "$choice" in
+        1)
+            echo "Pen added"
+            total=$((total + 10))
+            ;;
+        2)
+            echo "Pencil added"
+            total=$((total + 5))
+            ;;
+        3)
+            echo "Book added"
+            total=$((total + 50))
+            ;;
+        4)
+            echo "Bag added"
+            total=$((total + 500))
+            ;;
+        5)
+            break
+            ;;
+        *)
+            echo "Invalid choice! Try again."
+            ;;
+    esac
+done
+
+echo "---------------------------"
+echo "Total Amount = Rs.$total"
+echo "Thank You!"
+echo "---------------------------"
+
+
+Run panra method :
+1.nano filename.sh 
+2.control+o and Enter 
+3.control+x 
+4.chmod +x filename.sh
+5.  ./filename.sh
