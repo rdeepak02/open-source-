@@ -1,0 +1,31 @@
+echo "--------------------------------------"
+echo "     CURRENT USER SESSION DETAILS"
+echo "--------------------------------------"
+
+echo "Current User:"
+whoami
+
+echo "User Login Details:"
+who
+
+echo "Current Working Directory:"
+pwd
+
+echo "Current Terminal:"
+tty
+
+echo "Current Date:"
+date
+
+echo "Current Shell:"
+echo "$SHELL"
+
+echo "Home Directory:"
+echo "$HOME"
+
+echo "User Session Information:"
+w
+
+echo "--------------------------------------"
+echo "        SESSION DETAILS END"
+echo "--------------------------------------"
