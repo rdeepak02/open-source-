@@ -1,0 +1,23 @@
+#!/bin/bash
+
+echo "Enter the file name:"
+read file
+
+echo "Enter the new extension:"
+read ext
+
+newfile="${file%.*}.$ext"
+
+mv "$file" "$newfile"
+
+echo "File renamed successfully!"
+echo "New file name: $newfile"
+
+
+run the program 
+1.wsl
+2.nano filename.sh
+3.control+o& Enter
+4.control+x
+5.chmod +x filename.sh
+6.  ./filename.sh
