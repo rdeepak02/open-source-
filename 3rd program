@@ -34,3 +34,9 @@ run the program
 3.control+x 
 4.php -S localhost:8000
 5.website=http://localhost:8000/filenme.php
+
+
+php install:
+1.sudo apt update
+2.sudo apt install php-cli -y
+3.php -v
